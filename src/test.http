@@ -1,0 +1,16 @@
+### Adaugă document
+POST http://localhost:8080/api/documents
+Content-Type: application/json
+
+{
+  "title": "Vacation Policy",
+  "content": "Employees get 25 days of paid vacation per year. Unused days can be carried over to next year, maximum 5 days."
+}
+
+### Pune întrebare
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "question": "How many vacation days do I get?"
+}
